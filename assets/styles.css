@@ -1,0 +1,46 @@
+#wrapper {
+  border: 1px solid #000;
+}
+i {
+
+}
+
+/*HEADER*/
+.nav-bar {
+  border: 1px solid #000;
+}
+#username {
+
+}
+
+/*MAIN SECTION*/
+.user-content {
+  border: 1px solid #000;
+}
+.logo {
+
+}
+#add-link {
+
+}
+.user-links {
+
+}
+.user-links li {
+
+}
+
+
+/*RECOMMENDED SECTION*/
+.reco-content {
+  border: 1px solid #000;
+}
+.logo {
+
+}
+.reco-links {
+
+}
+.reco-links li {
+
+}
