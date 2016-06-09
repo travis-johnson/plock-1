@@ -1,0 +1,75 @@
+For all:
+header "Authorization", "username" #(this is what ours usually looks like, not sure about Front-End)
+
+
+
+1) Add links
+POST "/links"
+
+URL, title, description (in json-encoded body)
+
+ -create input form
+
+
+
+2) See links
+GET "/links"
+
+body: (see mockup)
+
+
+
+3) Recommend links
+POST "/links/recommended"
+
+URL, title, description, other_person_username (in json-encoded body)
+
+
+
+4) See
+GET "/links/recommend"
+
+body: (see mockup)
+
+
+
+JSON mockups:
+---------------
+
+link JSON:
+
+{username => "username",
+ links => [
+   {url => " ",
+   title => " ",
+   description => " "},
+   {url => " ",
+   title => " ",
+   description => " "}
+   ]
+}
+
+
+Recs JSON:
+
+{username => "username",
+ reco _lists => [
+   {url => " ",
+   title => " ",
+   description => " "
+   recommended_by => " "},
+   {url => " ",
+   title => " ",
+   description => " "
+   recommended_by => " "}
+   ]
+}
+
+
+Front-End's body is going to look like this when they send a request:
+
+{
+ url: " ",
+ title: " ",
+ description: " "
+}.to_json
